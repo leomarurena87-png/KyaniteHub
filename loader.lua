@@ -23,7 +23,7 @@ local function v5()
 end
 local function v6()
     Notification()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/NekoMe0w/KyaniteHub/main/Scripts/Family%20Paradise'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/leomarurena87-png/KyaniteHub/refs/heads/main/scripts/Family%20Paradise'))()
 end
 local function v7()
     Notification()
