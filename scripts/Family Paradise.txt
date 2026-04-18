@@ -1,0 +1,1653 @@
+-- ts file was generated at discord.gg/25ms
+
+function removeCars()
+    game.Workspace.Vehicles:Destroy()
+end
+function SpamSport()
+    game.StarterGui:SetCore('SendNotification', {
+        Title = 'Sport Car',
+        Text = 'Wait 60 seconds then you will automatically rejoin',
+        Icon = 'http://www.roblox.com/asset/?id=13277133318',
+        Duration = 5,
+    })
+    game:GetService('RunService').RenderStepped:Connect(function()
+        game:GetService('ReplicatedStorage').VehicleAssets.Remotes.SpawnCar:InvokeServer('Yellow Sporty', false)
+    end)
+    wait(60)
+    game:GetService('TeleportService'):Teleport(game.PlaceId, game:GetService('Players').LocalPlayer)
+end
+function SpamBuggy()
+    while getgenv().SpamBuggy == true do
+        task.wait()
+        game:GetService('RunService').RenderStepped:Connect(function()
+            game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('Dealership', 'Pink Jeep')
+        end)
+    end
+end
+function AutoFuckServer()
+    while getgenv().AutoFuckServer == true do
+        task.wait()
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Cat')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Dog')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Pig')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Bunny')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Duck')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Flamingo')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Lion')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Wolf')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Griffin')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Unicorn')
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Dragon')
+    end
+end
+function MEOW()
+    while getgenv().MEOW == true do
+        task.wait()
+
+        game.Players.LocalPlayer.Backpack:FindFirstChild('InstantCampfire').Parent = game.Players.LocalPlayer.Character
+
+        for _ = 1, 100 do
+            game.Players.LocalPlayer.Character.InstantCampfire:Activate()
+        end
+    end
+end
+function RemoveCampfire()
+    local v1 = game:GetDescendants()
+    local v2 = 'Campfire'
+
+    for v3 = 1, #v1 do
+        local v4 = v1[v3]
+
+        if v4.Name == v2 then
+            v4:Destroy()
+        end
+    end
+end
+function Tools()
+    game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear me  123234510')
+end
+function gamepasses()
+    game.Players.LocalPlayer.GamePassFolder['Premium Editor'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Troll Pack'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['YouTuber Admin Commands'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Flying Cloud'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Double Pay'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Pets Pack'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Stroller Colors'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Sports Cars'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Galaxy Fidget Spinner'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Surprise Pack'].Value = true
+    game.Players.LocalPlayer.GamePassFolder['Admin Commands'].Value = true
+    game.Players.LocalPlayer.GamePassFolder.Buggy.Value = true
+    game.Players.LocalPlayer.GamePassFolder.Boombox.Value = true
+    game.Players.LocalPlayer.GamePassFolder.Segway.Value = true
+    game.Players.LocalPlayer.GamePassFolder.VIP.Value = true
+    game.Players.LocalPlayer.GamePassFolder.Hyperbike.Value = true
+end
+function Paint()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/pgh.lua', true))()
+end
+function DropTool()
+    local _LocalPlayer = game:GetService('Players').LocalPlayer
+    local v6, v7, v8 = pairs(_LocalPlayer.Backpack:GetDescendants())
+
+    while true do
+        local v9
+
+        v8, v9 = v6(v7, v8)
+
+        if v8 == nil then
+            break
+        end
+        if v9:IsA('Tool') then
+            v9.CanBeDropped = true
+            v9.Parent = _LocalPlayer.Character
+            v9.Parent = workspace
+        end
+    end
+
+    wait(0)
+    game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Reset')
+end
+function Deletetool()
+    local v10, v11, v12 = pairs(game.Players.LocalPlayer.Backpack:GetChildren())
+
+    while true do
+        local v13
+
+        v12, v13 = v10(v11, v12)
+
+        if v12 == nil then
+            break
+        end
+
+        v13:Destroy()
+    end
+end
+function handTo()
+    game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'Handto ' .. Username .. '')
+end
+function Nakedall()
+    game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear me 163354553')
+
+    local _LocalPlayer2 = game:GetService('Players').LocalPlayer
+    local v15, v16, v17 = pairs(game:GetService('Players'):GetPlayers())
+
+    while true do
+        local v18
+
+        v17, v18 = v15(v16, v17)
+
+        if v17 == nil then
+            break
+        end
+        if v18 and (v18.Character and v18 ~= _LocalPlayer2) and v18.Character:FindFirstChild('Head') then
+            local _Head = v18.Character:FindFirstChild('Head')
+            local v20 = _Head
+
+            _Head.BreakJoints(v20)
+
+            _Head.Transparency = 0
+            _Head.BrickColor = v18.TeamColor
+            _Head.Anchored = true
+            _Head.CanCollide = false
+
+            pcall(function()
+                _Head.CFrame = _LocalPlayer2.Character.HumanoidRootPart.CFrame * CFrame.new(1, 0, -3.5)
+            end)
+        end
+    end
+end
+function Killall()
+    prefix = game.Players.LocalPlayer.PlayerGui.HDAdminGUIs.MainFrame.Pages.Settings.Custom['AE1 Prefix'].SettingValue.TextBox.Text
+
+    game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear me 72069827')
+    game.ReplicatedStorage.HDAdminClient.Signals.RequestCommand:InvokeServer('')
+
+    local _LocalPlayer3 = game:GetService('Players').LocalPlayer
+    local v22, v23, v24 = pairs(game:GetService('Players'):GetPlayers())
+
+    while true do
+        local v25
+
+        v24, v25 = v22(v23, v24)
+
+        if v24 == nil then
+            break
+        end
+        if v25 and (v25.Character and v25 ~= _LocalPlayer3) and v25.Character:FindFirstChild('Head') then
+            local _Head2 = v25.Character:FindFirstChild('Head')
+            local v27 = _Head2
+
+            _Head2.BreakJoints(v27)
+
+            _Head2.Transparency = 0
+            _Head2.BrickColor = v25.TeamColor
+            _Head2.Anchored = true
+            _Head2.CanCollide = false
+
+            pcall(function()
+                _Head2.CFrame = _LocalPlayer3.Character.HumanoidRootPart.CFrame * CFrame.new(1, 0, -3.5)
+                game.Players.LocalPlayer.Backpack:FindFirstChild('BadBreakUp').Parent = game.Players.LocalPlayer.Character
+
+                for _ = 1, 15 do
+                    wait(0.1)
+                    game.Players.LocalPlayer.Character.BadBreakUp:Activate()
+                end
+            end)
+        end
+    end
+end
+function AntiBlur()
+    game:GetService('Workspace').Camera.Blur.Enabled = false
+end
+function AntiPoop()
+    while getgenv().AntiPoop == true do
+        wait(1)
+
+        local v28 = game.Workspace:GetDescendants()
+        local _ = game.Players.LocalPlayer.Character
+        local _Name = game:GetService('Players').LocalPlayer.Name
+
+        for v30 = 1, #v28 do
+            local v31 = v28[v30]
+
+            if getgenv().AntiPoop == true then
+                if v31.Name == _Name .. "'s HDAdminClone" then
+                    wait(1)
+                    game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Reset')
+                    wait(3)
+
+                    Toggle = false
+                end
+            end
+        end
+    end
+end
+function AntiGive()
+    while getgenv().AntiGive == true do
+        wait(0.2)
+
+        local v32, v33, v34 = pairs(game.Players.LocalPlayer.Backpack:GetChildren())
+
+        while true do
+            local v35
+
+            v34, v35 = v32(v33, v34)
+
+            if v34 == nil then
+                break
+            end
+            if v34 >= 50 then
+                wait(1)
+                game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Reset')
+            else
+                print(v34, v35)
+            end
+        end
+    end
+end
+function AntiJail()
+    while getgenv().AntiJail == true do
+        wait(0.4)
+
+        local v36 = game.Workspace:GetDescendants()
+        local _ = game.Players.LocalPlayer.Character
+        local _Name2 = game:GetService('Players').LocalPlayer.Name
+
+        for v38 = 1, #v36 do
+            local v39 = v36[v38]
+
+            if getgenv().AntiJail == true then
+                if v39.Name == _Name2 .. "'s JailCell" then
+                    wait(0.4)
+                    game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'unjc me')
+                    wait(0.4)
+
+                    Toggle = false
+                end
+            end
+        end
+    end
+end
+function AntiIce()
+    while getgenv().AntiIce == true do
+        wait(0.4)
+
+        local v40 = game.Workspace:GetDescendants()
+        local _ = game.Players.LocalPlayer.Character
+        local _Name3 = game:GetService('Players').LocalPlayer.Name
+
+        for v42 = 1, #v40 do
+            local v43 = v40[v42]
+
+            if getgenv().AntiIce == true then
+                if v43.Name == _Name3 .. "'s FreezeBlock" then
+                    wait(0.4)
+                    game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'unice me')
+                    wait(0.4)
+
+                    Toggle = false
+                end
+            end
+        end
+    end
+end
+function AutoStroller()
+    while getgenv().AutoStroller == true do
+        task.wait()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/Stroller.Rainbow%2BScript.txt'))()
+    end
+end
+function RainbowSkin()
+    while getgenv().RainbowSkin == true do
+        wait()
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('ApplyColor', {
+            ['Left Leg'] = {
+                Color3.fromHSV(tick() % 5 / 5, 1, 1),
+            },
+            ['Right Arm'] = {
+                Color3.fromHSV(tick() % 5 / 5, 1, 1),
+            },
+            Head = {
+                Color3.fromHSV(tick() % 5 / 5, 1, 1),
+            },
+            Torso = {
+                Color3.fromHSV(tick() % 5 / 5, 1, 1),
+            },
+            ['Right Leg'] = {
+                Color3.fromHSV(tick() % 5 / 5, 1, 1),
+            },
+            ['Left Arm'] = {
+                Color3.fromHSV(tick() % 5 / 5, 1, 1),
+            },
+        })
+    end
+end
+function antisit()
+    while getgenv().antisit == true do
+        wait()
+
+        local v44, v45, v46 = pairs(game:GetService('Players'):GetDescendants())
+
+        while true do
+            local v47
+
+            v46, v47 = v44(v45, v46)
+
+            if v46 == nil then
+                break
+            end
+            if v47:IsA('Seat') then
+                v47:Destroy()
+            end
+        end
+    end
+end
+function AutoRun()
+    while getgenv().AutoRun == true do
+        wait(1)
+        game:GetService('ReplicatedStorage').Remotes.BasicEvent:FireServer('Run')
+    end
+end
+function RespawnOndeathlocation()
+    while getgenv().RespawnOndeathlocation == true do
+        task.wait()
+        game.Players.LocalPlayer.Character:WaitForChild('Humanoid').Died:connect(function()
+            local _Position = game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').Position
+
+            game.Players.LocalPlayer.CharacterAdded:Wait()
+
+            game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(_Position)
+        end)
+    end
+end
+function ServerHop()
+    local v49 = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/4241242833/servers/Public?sortOrder=Asc&limit=100'))
+    local v50, v51, v52 = pairs(v49.data)
+
+    while true do
+        local v53
+
+        v52, v53 = v50(v51, v52)
+
+        if v52 == nil then
+            break
+        end
+        if v53.playing ~= v53.maxPlayers then
+            game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v53.id)
+        end
+    end
+end
+function Destory()
+    game:GetService('CoreGui').FinityUI:Destroy()
+end
+function Rejoin()
+    game:GetService('TeleportService'):Teleport(game.PlaceId, game:GetService('Players').LocalPlayer)
+end
+function Reset()
+    game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Reset')
+end
+function infjump1()
+    while getgenv().infjump1 == true do
+        wait()
+
+        getgenv().dc = false
+
+        local u54 = nil
+
+        infJump = game:GetService('UserInputService').JumpRequest:Connect(function()
+            if dc then
+                u54:Disconnect()
+            else
+                game.Players.LocalPlayer.Character.Humanoid:ChangeState('Jumping')
+            end
+        end)
+
+        if getgenv().infjump1 == false then
+            wait()
+
+            getgenv().dc = true
+        end
+    end
+end
+function Fly()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NekoMe0w/KyaniteHub/main/Modules/fly'))()
+end
+
+local _LocalPlayer4 = game.Players.LocalPlayer
+
+function RainbowHD()
+    while getgenv().RainbowHD == true do
+        wait()
+
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.MainFrame.Pages.Home.NoticesLabel.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.MainFrame.Pages.Home.NavigateLabel.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.MainFrame.DragBar.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.MainFrame.Pages.Special.NavigateButtons.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.MainFrame.Pages.About.NavigateButtons.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.MainFrame.Pages.Admin.NavigateButtons.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.MainFrame.Pages.Commands.NavigateButtons.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.CmdBar.SearchFrame.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.CmdBar.ResultsFrame.Label1.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.CmdBar.ResultsFrame.Label2.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.CmdBar.ResultsFrame.Label3.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.CmdBar.ResultsFrame.Label4.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+        _LocalPlayer4.PlayerGui.HDAdminGUIs.CmdBar.ResultsFrame.Label5.BackgroundColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+    end
+end
+function Cmdbar()
+    game.Players.LocalPlayer.PlayerGui.HDAdminGUIs.CmdBar.Visible = true
+end
+function Remote()
+    game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear me 33383241')
+end
+function SpamRemote()
+    while getgenv().SpamRemote == true do
+        wait()
+        game.Players.LocalPlayer.Character.RemoteMine:Activate()
+    end
+end
+function Discord()
+    setclipboard('https://discord.gg/hmdFC4GvMU')
+end
+function AutoKnockDoors()
+    while getgenv().AutoKnockDoors == true do
+        wait(0)
+
+        local _ClickDetector = game:GetService('Workspace').Houses.House1.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector)
+
+        local _ClickDetector2 = game:GetService('Workspace').Houses.House2.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector2)
+
+        local _ClickDetector3 = game:GetService('Workspace').Houses.House3.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector3)
+
+        local _ClickDetector4 = game:GetService('Workspace').Houses.House4.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector4)
+
+        local _ClickDetector5 = game:GetService('Workspace').Houses.House5.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector5)
+
+        local _ClickDetector6 = game:GetService('Workspace').Houses.House6.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector6)
+
+        local _ClickDetector7 = game:GetService('Workspace').Houses.House7.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector7)
+
+        local _ClickDetector8 = game:GetService('Workspace').Houses.House8.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector8)
+
+        local _ClickDetector9 = game:GetService('Workspace').Houses.House9.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector9)
+
+        local _ClickDetector10 = game:GetService('Workspace').Houses.House10.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector10)
+
+        local _ClickDetector11 = game:GetService('Workspace').Houses.House11.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector11)
+
+        local _ClickDetector12 = game:GetService('Workspace').Houses.House8.Doors.MainDoor.ClickDetector
+
+        fireclickdetector(_ClickDetector12)
+    end
+end
+function Unlockdoor()
+    if game:GetService('Workspace').Houses.House1.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House1.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House2.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House2.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House3.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House3.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House4.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House4.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House5.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House5.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House6.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House6.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House7.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House7.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House8.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House8.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House9.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House9.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House10.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House10.Doors.MainDoor.CanCollide = false
+    end
+    if game:GetService('Workspace').Houses.House11.Doors.MainDoor.CanCollide == true then
+        game:GetService('Workspace').Houses.House11.Doors.MainDoor.CanCollide = false
+    end
+end
+
+getgenv().AutoKnockDoors = true
+getgenv().SpamRemote = true
+getgenv().SpamEnable = true
+getgenv().MEOW = true
+getgenv().antisit = true
+getgenv().SpamSport = true
+getgenv().SpamBuggy = true
+getgenv().Giveclogs = true
+getgenv().GiveNightvision = true
+getgenv().PoopSpam = true
+getgenv().ApSpam = true
+getgenv().ExplodeSpam = true
+getgenv().AutoFuckServer = true
+getgenv().AntiPoop = true
+getgenv().AntiIce = true
+getgenv().AntiJail = true
+getgenv().AntiDamage = true
+getgenv().AntiGive = true
+getgenv().AutoStroller = true
+getgenv().RainbowSkin = true
+getgenv().RespawnOndeathlocation = true
+getgenv().AutoRun = true
+getgenv().NoName = true
+getgenv().TestName = true
+getgenv().infjump1 = true
+getgenv().infjump1 = false
+getgenv().RainbowHD = true
+prefix = game.Players.LocalPlayer.PlayerGui.HDAdminGUIs.MainFrame.Pages.Settings.Custom['AE1 Prefix'].SettingValue.TextBox.Text
+Username = username
+MEOW = Car1
+
+local v68 = loadstring(game:HttpGet('https://raw.githubusercontent.com/NekoMe0w/KyaniteHub/main/Modules/Finity%20Ui'))().new(true)
+
+v68.ChangeToggleKey(Enum.KeyCode.LeftShift)
+
+local _Home = v68:Category('Home')
+local _Creators = _Home:Sector('Creators')
+local _Update14082023 = _Home:Sector('Update [14/08/2023]')
+
+_Creators:Cheat('Label', 'Scripted by: tazie22 & n0thentai')
+_Creators:Cheat('Label', 'UI by: deto#7612 | detourious')
+_Creators:Cheat('Label', 'To minimize the UI, Press Shift')
+_Update14082023:Cheat('Label', '[+] Vehicles Mods')
+_Update14082023:Cheat('Label', '[+] FE Teleport')
+_Update14082023:Cheat('Label', '[+] Rewrite whole script for better performance')
+_Update14082023:Cheat('Label', '[!] Ton of Bug Fixes')
+
+local _Main = v68:Category('Main')
+local _HDAdmin = v68:Category('HD Admin')
+local _AvatarEditor = v68:Category('Avatar Editor')
+local _Miscellaneous = v68:Category('Miscellaneous')
+local _Settings = v68:Category('Settings')
+local _Campfires = _Main:Sector('Campfires')
+local _Vehicles = _Main:Sector('Vehicles')
+local _Remotemine = _Main:Sector('Remote mine')
+local _HDSettings = _Main:Sector('HD Settings')
+local _House = _Main:Sector('House')
+local _Mod = _HDAdmin:Sector('Mod')
+local _Spam = _HDAdmin:Sector('Spam')
+local _Protection = _HDAdmin:Sector('Protection')
+local _Gears = _HDAdmin:Sector('Gears')
+local _Avatar = _AvatarEditor:Sector('Avatar')
+local _Second = _AvatarEditor:Sector('Second')
+local _LocalPlayer5 = _Miscellaneous:Sector('LocalPlayer')
+local _Misc = _Miscellaneous:Sector('Misc')
+local _Settings2 = _Settings:Sector('Settings')
+
+_Campfires:Cheat('Checkbox', 'Campfire lag', function(p91)
+    getgenv().MEOW = p91
+
+    MEOW()
+end)
+_Campfires:Cheat('Checkbox', 'Spawn Campfire', function(p92)
+    if p92 == true then
+        Tools()
+    end
+end)
+_Campfires:Cheat('Checkbox', 'Remove Campfire', function(p93)
+    if p93 == true then
+        RemoveCampfire()
+    end
+end)
+
+local v94 = _Remotemine
+
+_Remotemine.Cheat(v94, 'Checkbox', 'Remote Exploding', function(p95)
+    if p95 == true then
+        SpamRemote()
+    end
+end)
+
+local v96 = _Remotemine
+
+_Remotemine.Cheat(v96, 'Checkbox', 'Spawn Remote Mine', function(p97)
+    if p97 == true then
+        _Remotemine()
+    end
+end)
+_House:Cheat('Checkbox', 'Knock all Doors', function(p98)
+    getgenv().AutoKnockDoors = p98
+
+    AutoKnockDoors()
+end)
+_House:Cheat('Checkbox', 'Unlock All Doors', function(p99)
+    if p99 == true then
+        Unlockdoor()
+    end
+end)
+_Vehicles:Cheat('Checkbox', 'Slowdown Server', function(p100)
+    getgenv().SpamBuggy = p100
+
+    SpamBuggy()
+end)
+_Vehicles:Cheat('Checkbox', 'Duplicate Sporty Car', function(p101)
+    if p101 == true then
+        SpamSport()
+    end
+end)
+_Vehicles:Cheat('Checkbox', 'Remove Vehicles', function(p102)
+    if p102 == true then
+        removeCars()
+    end
+end)
+_Vehicles:Cheat('Dropdown', 'Select a Car', function(p103)
+    MEOW = p103
+
+    if p103 == 'Blue Cruiser' then
+        print('Blue Cruiser')
+    elseif p103 == 'Orange Zoomer' then
+        print('Orange Zoomer')
+    elseif p103 == 'Red Speeder' then
+        print('Red Speeder')
+    elseif p103 == 'Yellow Sporty' then
+        print('Yellow Sporty')
+    end
+end, {
+    options = {
+        'Blue Cruiser',
+        'Orange Zoomer',
+        'Red Speeder',
+        'Yellow Sporty',
+    },
+})
+_Vehicles:Cheat('Slider', 'Vehicles Speed', function(p104)
+    local v105 = MEOW
+    local _VehicleConfig = game:GetService('Workspace').Vehicles[v105].VehicleConfig
+
+    require(_VehicleConfig).Power = p104
+end, {
+    min = 0,
+    max = 1000000,
+    suffix = 'Vehicles Speed',
+})
+_Vehicles:Cheat('Slider', 'Vehicles TurnRadius', function(p107)
+    local v108 = MEOW
+    local _VehicleConfig2 = game:GetService('Workspace').Vehicles[v108].VehicleConfig
+
+    require(_VehicleConfig2).TurnRadius = p107
+end, {
+    min = 0,
+    max = 60,
+    suffix = 'Vehicles TurnRadius',
+})
+_Vehicles:Cheat('Slider', 'Vehicles TurnSpeed', function(p110)
+    local v111 = MEOW
+    local _VehicleConfig3 = game:GetService('Workspace').Vehicles[v111].VehicleConfig
+
+    require(_VehicleConfig3).turnSpeed = p110
+end, {
+    min = 0,
+    max = 1000,
+    suffix = 'Vehicles TurnSpeed',
+})
+_HDSettings:Cheat('Textbox', 'Prefix', function(p113)
+    game:GetService('ReplicatedStorage').HDAdminClient.Signals.ChangeSetting:InvokeServer({
+        'Prefix',
+        p113,
+    })
+
+    _LocalPlayer4.PlayerGui.HDAdminGUIs.MainFrame.Pages.Settings.Custom['AE1 Prefix'].SettingValue.TextBox.Text = p113
+end, {
+    placeholder = 'Prefix',
+})
+_HDSettings:Cheat('Checkbox', 'Rainbow HD Admin', function(p114)
+    getgenv().RainbowHD = p114
+
+    RainbowHD()
+end)
+_Mod:Cheat('Checkbox', 'Kill all', function(p115)
+    if p115 == true then
+        Killall()
+    end
+end)
+_Mod:Cheat('Checkbox', 'Naked all', function(p116)
+    if p116 == true then
+        Nakedall()
+    end
+end)
+_Mod:Cheat('Checkbox', 'Paint Map Yellow', function(p117)
+    if p117 == true then
+        Paint()
+    end
+end)
+_Mod:Cheat('Dropdown', 'GUi', function(p118)
+    if p118 == 'Cmdbar2' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/hd.lua'))()
+    elseif p118 == 'Cmdbar' then
+        game.Players.LocalPlayer.PlayerGui.HDAdminGUIs.CmdBar.Visible = true
+    elseif p118 == 'Morph Shop' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/morph.txt'))()
+    elseif p118 == 'Color Picker' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/ColorPicker.txt'))()
+    end
+end, {
+    options = {
+        'Cmdbar2',
+        'Cmdbar',
+        'Morph Shop',
+        'Color Picker',
+    },
+})
+_Mod:Cheat('Checkbox', 'Unlock Premium Editor', function(p119)
+    if p119 == true then
+        gamepasses()
+    end
+end)
+_Spam:Cheat('Checkbox', 'Toggle Spam', function(p120)
+    getgenv().SpamEnable = p120
+end)
+_Spam:Cheat('Textbox', 'Hidden Spam', function(p121)
+    while getgenv().SpamEnable == true do
+        wait(0.5)
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. p121)
+    end
+end, {
+    placeholder = 'Command & Username',
+})
+_Spam:Cheat('Textbox', 'Unhidden Spam', function(p122)
+    while getgenv().SpamEnable == true do
+        wait(0.4)
+        game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageRequest:FireServer(prefix .. p122, 'All')
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. p122)
+    end
+end, {
+    placeholder = 'Command & Username',
+})
+_Gears:Cheat('Dropdown', 'Select a Gear', function(p123)
+    if p123 == 'Korblox Sword and Shield' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 68539623')
+    elseif p123 == 'Azure Dragon.s Magic Slayer' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 268586231')
+    elseif p123 == 'Nightmare Dragon Slayer' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 1103011681')
+    elseif p123 == 'Skeleton Scythe' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear  ' .. Username .. ' 95951330')
+    elseif p123 == 'Sword of Darkness' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear  ' .. Username .. ' 77443491')
+    elseif p123 == 'Sword of Light' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear  ' .. Username .. ' 77443461')
+    elseif p123 == 'Cool Story Air Conditioner explosive' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 119101643')
+    elseif p123 == 'Scroll of Sevenless explosive' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 125013830')
+    elseif p123 == 'The Midas Glove' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 17407931')
+    elseif p123 == 'Bluesteel Midas Hand' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 163354553')
+    elseif p123 == 'Pxsy' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 26777410')
+    elseif p123 == 'clown bomb' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 88146497')
+    elseif p123 == 'Bear Mine Gun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 90718350')
+    elseif p123 == 'Boombox Gear 3.0' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 193769809')
+    elseif p123 == 'Golden Super Fly Boombox' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 212641536')
+    elseif p123 == 'Poseidon.s Quake Trident' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 54130559')
+    elseif p123 == 'Towering Inferno Sword' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 83704169')
+    elseif p123 == 'Darkheart' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 16895215')
+    elseif p123 == 'Rainbowrath: The Avenger' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 346686597')
+    elseif p123 == 'Fall Periastron Xi' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 2544549379')
+    elseif p123 == 'Festive Periastron Chi' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 139577901')
+    elseif p123 == 'Joyful Periastron Epsilon' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 233520257')
+    elseif p123 == 'Golden Sword of Spring Growth' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 226205948')
+    elseif p123 == 'Zombie Staff' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 26421972')
+    elseif p123 == 'Deluxe Vine Staff' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. '183355732')
+    elseif p123 == 'Pretty Pretty Princess Sceptor' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 114020480')
+    elseif p123 == 'Cloak of the Undying' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 94794833')
+    elseif p123 == 'Sorcus Sword of Judgement' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 83704190')
+    elseif p123 == 'Blade of the Dusekkar' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 501942750')
+    elseif p123 == 'Vampire Vanquisher' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 94794847')
+    elseif p123 == 'Bat Knight Bat Sword' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 17680660')
+    elseif p123 == 'Sledge Hammer' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 45177979')
+    elseif p123 == 'Bo Staff 7000' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 45177979')
+    elseif p123 == 'Vine Staff' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 30847733')
+    elseif p123 == 'Ice Dragon Slayer' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 168141301')
+    elseif p123 == 'Sword Of The Eternal Abyss' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 532254782')
+    elseif p123 == 'Sword Of The Epicredness' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 409745306')
+    elseif p123 == 'Sword Of The Lands' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 183826384')
+    elseif p123 == 'Super Slash Cat Claws' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 295460702')
+    elseif p123 == 'Dragon.s Flame Sword then' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 168140949')
+    elseif p123 == 'Sword Of The Seas' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 155661985')
+    elseif p123 == 'Ban Hammer' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 10468797')
+    elseif p123 == 'Magic Carrot' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 50454041')
+    elseif p123 == 'Dagger Of Shattered Dimensions' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 71037101')
+    elseif p123 == 'Mythic Sword Of The Tides' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 241017568')
+    elseif p123 == 'Korblox Ice Claws' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear ' .. Username .. ' 223785065')
+    elseif p123 == 'Hyperlaser Gun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 130113146')
+    elseif p123 == 'Ice Staff' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 19704064')
+    elseif p123 == 'Super Rocket Launcher' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 190094159')
+    elseif p123 == 'Staff of Double Disasters' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 173812248')
+    elseif p123 == 'Knights of the Splintered Skies: Wind Summoner' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 127506257')
+    elseif p123 == 'Zeus.s Lightning Bolt Staff' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 66416616')
+    elseif p123 == 'Staff of Neverending Frost' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 66896601')
+    elseif p123 == 'Airstrike' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 88885539')
+    elseif p123 == 'Red Hyperlaser Gun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 212296936')
+    elseif p123 == 'Luger Pistol' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 95354288')
+    elseif p123 == 'The General.s .45' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 97885508')
+    elseif p123 == 'Laser Finger Pointers' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 115377964')
+    elseif p123 == 'Super Freeze Ray 2011' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 42845853')
+    elseif p123 == 'Deluxe Snowball Cannon 3000' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 67755182')
+    elseif p123 == 'Land Shark Shooter' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 118281463')
+    elseif p123 == 'Dart Trap' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 90220371')
+    elseif p123 == 'Killer Bee Launcher' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 163351579')
+    elseif p123 == 'Dark Spellbook Of The Forgotten' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 56561579')
+    elseif p123 == 'Inglaciator -6000' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 185422055')
+    elseif p123 == 'Portal Gun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 34870758 ')
+    elseif p123 == 'Hoover Sucker' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 84418938 ')
+    elseif p123 == 'Flamethrower' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 33879504')
+    elseif p123 == 'Flashbang' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 16979083')
+    elseif p123 == 'Rubber Chicken Launcher' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 121385193')
+    elseif p123 == 'Blackhole Ray Gun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 78005009')
+    elseif p123 == 'Tornade' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 47871646')
+    elseif p123 == 'Nova Wand' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 27860496')
+    elseif p123 == 'Danceblaster 7000' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 45941451')
+    elseif p123 == 'Blow Dryer' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 11719016')
+    elseif p123 == 'Tornado Summoner' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 102705454')
+    elseif p123 == 'Spring Launcher' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 150366351')
+    elseif p123 == 'Transmorph Ray Gun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 29099749')
+    elseif p123 == 'Steamgun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 157205837')
+    elseif p123 == 'Korblox Flying Oblivion Horn' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 101734094')
+    elseif p123 == 'Super Freeze Cannon' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 102705402')
+    elseif p123 == 'Hot Chocolate Launcher' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 143606363')
+    elseif p123 == 'Deluxe Dance Ray' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 430065768')
+    elseif p123 == 'Killer Whale Launcher' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 188643628')
+    elseif p123 == 'Dark Alien Hatchling' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 69567879')
+    elseif p123 == 'Turkey Cannon' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 40504724')
+    elseif p123 == 'Z Ray Gun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 65082275')
+    elseif p123 == 'Pretty Pretty Princess Sceptor' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 114020480')
+    elseif p123 == 'PE Whistle' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 128160832')
+    elseif p123 == 'Deluxe Slime Ray' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 503957703')
+    elseif p123 == 'Confusoray 672' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 48596305')
+    elseif p123 == 'Stinky Underwear Launcher' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 121385230')
+    elseif p123 == 'Wand of Flurry' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 2226815033')
+    elseif p123 == 'Staff of Shifting Polarity' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 61459706')
+    elseif p123 == 'Bag O Christmas Tree Seeds' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 19703034')
+    elseif p123 == 'Merely.s Web Slinger' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 169602010')
+    elseif p123 == 'Gravity gun' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 34901961')
+    elseif p123 == 'Lucky Clover Hammer' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 108153884')
+    elseif p123 == 'Orbital Piano Strike' then
+        game:GetService('ReplicatedStorage').HDAdminClient.Signals.RequestCommand:InvokeServer(prefix .. 'gear   ' .. Username .. ' 113299590')
+    else
+        local _ = not (p123 == '')
+    end
+end, {
+    options = {
+        ' ',
+        'Korblox Sword and Shield',
+        'Azure Dragon.s Magic Slayer',
+        'Nightmare Dragon Slayer',
+        'Bear Mine Gun',
+        'Skeleton Scythe',
+        'Sword of Darkness',
+        'Sword of Light',
+        'Cool Story Air Conditioner explosive',
+        'Scroll of Sevenless explosive',
+        'The Midas Glove',
+        'Bluesteel Midas Hand',
+        'Pxsy',
+        'Boombox Gear 3.0',
+        'Golden Super Fly Boombox',
+        'clown bomb',
+        'Poseidon.s Quake Trident',
+        'Towering Inferno Sword',
+        'Darkheart',
+        'Rainbowrath: The Avenger',
+        'Fall Periastron Xi',
+        'Festive Periastron Chi',
+        'Joyful Periastron Epsilon',
+        'Golden Sword of Spring Growth',
+        'Zombie Staff',
+        'Deluxe Vine Staff',
+        'Pretty Pretty Princess Sceptor',
+        'Cloak of the Undying',
+        'Vine Staff',
+        'Ice Dragon Slayer',
+        'Sword Of The Eternal Abyss',
+        'Sword Of The Epicredness',
+        'Sword Of The Lands',
+        'Super Slash Cat Claws',
+        'Dragon.s Flame Sword',
+        'Sword Of The Seas',
+        'Ban Hammer',
+        'Magic Carrot',
+        'Dagger Of Shattered Dimensions',
+        'Mythic Sword Of The Tides',
+        'Korblox Ice Claws',
+        'Stinky Underwear Launcher',
+        'Hyperlaser Gun',
+        'Ice Staff',
+        'Super Rocket Launcher',
+        'Staff of Double Disasters',
+        'Scroll of Sevenless',
+        'Knights of the Splintered Skies: Wind Summoner',
+        'Zeus.s Lightning Bolt Staff',
+        'Staff of Neverending Frost',
+        'Airstrike',
+        'Red Hyperlaser Gun',
+        'Luger Pistol',
+        'The General.s .45',
+        'Super Freeze Ray 2011',
+        'Laser Finger Pointers',
+        'Deluxe Snowball Cannon 3000',
+        'Land Shark Shooter',
+        'Dart Trap',
+        'Killer Bee Launcher',
+        'Dark Spellbook Of The Forgotten',
+        'Inglaciator -6000',
+        'Portal Gun',
+        'Hoover Sucker',
+        'Flamethrower',
+        'Flashbang',
+        'Rubber Chicken Launcher',
+        'Blackhole Ray Gun',
+        'Tornade',
+        'Big Apple Launcher',
+        'Nova Wand',
+        'Danceblaster 7000',
+        'Blow Dryer',
+        'Tornado Summoner',
+        'Spring Launcher',
+        'Transmorph Ray Gun',
+        'Steamgun',
+        'Korblox Flying Oblivion Horn',
+        'Super Freeze Cannon',
+        'Hot Chocolate Launcher',
+        'Deluxe Dance Ray',
+        'Killer Whale Launcher',
+        'Clown Bomb',
+        'Dark Alien Hatchling',
+        'Turkey Cannon',
+        'Z Ray Gun',
+        'Pretty Pretty Princess Sceptor',
+        'PE Whistle',
+        'Deluxe Slime Ray',
+        'Confusoray 672',
+        'Wand of Flurry',
+        'Staff of Shifting Polarity',
+        'Bag O Christmas Tree Seeds',
+        'Merely.s Web Slinger',
+        'Gravity gun',
+        'Lucky Clover Hammer',
+        'Orbital Piano Strike',
+    },
+})
+_Gears:Cheat('Dropdown', 'Game Shop', function(p124)
+    if p124 == 'Free Chest' then
+        firetouchinterest(game:GetService('Workspace').Chest, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
+    elseif p124 == 'Spraycan' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Spraycan')
+    elseif p124 == 'Magical Unicorn' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Magical Unicorn')
+    elseif p124 == 'VIP Stroller' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'VIP Stroller')
+    elseif p124 == 'Fire Extinguisher' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Fire Extinguisher')
+    elseif p124 == 'Fake Bomb' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Fake Bomb')
+    elseif p124 == 'Princess Wand' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Princess Wand')
+    elseif p124 == 'Knife' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Knife')
+    elseif p124 == 'Spy Drone' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Spy Drone')
+    elseif p124 == 'Rocketship' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Rocketship')
+    elseif p124 == 'Heart Balloon' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Heart Balloon')
+    elseif p124 == 'Blue Hyperbike' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Blue Hyperbike')
+    elseif p124 == 'Rain Cloud' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Rain Cloud')
+    elseif p124 == 'Jetpack' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Jetpack')
+    elseif p124 == 'Super Coil' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Super Coil')
+    elseif p124 == 'Laptop' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Laptop')
+    elseif p124 == 'Fireflies' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Fireflies')
+    elseif p124 == 'Gravity Coil' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Gravity Coil')
+    elseif p124 == 'Beach Ball' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Beach Ball')
+    elseif p124 == 'Green Balloon' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Green Balloon')
+    elseif p124 == 'Fluffy Unicorn' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Fluffy Unicorn')
+    elseif p124 == 'Boombox' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Boombox')
+    elseif p124 == 'Umbrella' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Umbrella')
+    elseif p124 == 'Throwing Spork' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Throwing Spork')
+    elseif p124 == 'Teddy' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Teddy')
+    elseif p124 == 'Firework' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Firework')
+    elseif p124 == 'Disco Motorcycle' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Disco Motorcycle')
+    elseif p124 == 'Water Balloon' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Water Balloon')
+    elseif p124 == 'Invisibility Cape' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('GearShop', 'Invisibility Cape')
+    elseif p124 == 'Ice Cream' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('Restaurant', 'Ice Cream')
+    elseif p124 == 'Hotdog' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('Restaurant', 'Hotdog')
+    elseif p124 == 'Bloxiade' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('Restaurant', 'Bloxiade')
+    elseif p124 == 'Burger' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('Restaurant', 'Burger')
+    elseif p124 == 'Chocolate Milk' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('Restaurant', 'Chocolate Milk')
+    elseif p124 == 'Bloxy Cola' then
+        game:GetService('ReplicatedStorage').Remotes.BuyItem:InvokeServer('Restaurant', 'Bloxy Cola')
+    end
+end, {
+    options = {
+        'Free Chest',
+        'Boombox',
+        'VIP Stroller',
+        'Fire Extinguisher',
+        'Fake Bomb',
+        'Princess Wand',
+        'Knife',
+        'Spy Drone',
+        'Rocketship',
+        'Heart Balloon',
+        'Blue Hyperbike',
+        'Rain Cloud',
+        'Jetpack',
+        'Laptop',
+        'Fireflies',
+        'Gravity Coil',
+        'Beach Ball',
+        'Green Balloon',
+        'Fluffy Unicorn',
+        'Spraycan',
+        'Umbrella',
+        'Throwing Spork',
+        'Teddy',
+        'Firework',
+        'Disco Motorcycle',
+        'Water Balloon',
+        'Invisibility Cape',
+        'Restaurant',
+        'Ice Cream',
+        'Hotdog',
+        'Bloxiade',
+        'Burger',
+        'Chocolate Milk',
+        'Bloxy Cola',
+    },
+})
+_Gears:Cheat('Textbox', 'Pick player to Give Gears', function(p125)
+    Username = p125
+end, {
+    placeholder = 'username',
+})
+_Gears:Cheat('Checkbox', 'HandTo', function(p126)
+    if p126 == true then
+        handTo()
+    end
+end)
+_Gears:Cheat('Checkbox', 'Drop Tools', function(p127)
+    if p127 == true then
+        DropTool()
+    end
+end)
+_Protection:Cheat('Checkbox', 'Anti Jail', function(p128)
+    getgenv().AntiJail = p128
+
+    AntiJail()
+end)
+_Protection:Cheat('Checkbox', 'Anti Ice', function(p129)
+    getgenv().AntiIce = p129
+
+    AntiIce()
+end)
+_Protection:Cheat('Checkbox', 'Anti Poop', function(p130)
+    getgenv().AntiPoop = p130
+
+    AntiPoop()
+end)
+_Protection:Cheat('Checkbox', 'Anti Give', function(p131)
+    getgenv().AntiGive = p131
+
+    AntiGive()
+end)
+_Protection:Cheat('Checkbox', 'Anti Blur', function(p132)
+    if p132 == true then
+        AntiBlur()
+    end
+end)
+_Avatar:Cheat('Checkbox', 'Rainbow Skin', function(p133)
+    getgenv().RainbowSkin = p133
+
+    RainbowSkin()
+end)
+_Avatar:Cheat('Checkbox', 'Rainbow Stroller', function(p134)
+    getgenv().AutoStroller = p134
+
+    AutoStroller()
+end)
+_Avatar:Cheat('Dropdown', 'Girl Avatar', function(p135)
+    if p135 == 'Neko' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/neko.txt'))()
+    elseif p135 == 'Angel' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/Angel.txt'))()
+    elseif p135 == 'Police' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/police.txt'))()
+    elseif p135 == 'Pink Outfit' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/Pink.txt'))()
+    elseif p135 == 'Void Star Outfit' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/Void%20Star%20Girl'))()
+    elseif p135 == 'Black Crown Outfit' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/Black%20Crown%20Outfit'))()
+    elseif p135 == 'Black Hat Outfit' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/Black%20Hat%20Outfit'))()
+    else
+        local _ = not (p135 == '')
+    end
+end, {
+    options = {
+        'Neko',
+        'Angel',
+        'Police',
+        'Pink Outfit',
+        'Void Star Outfit',
+        'Black Crown Outfit',
+        'Black Hat Outfit',
+    },
+})
+_Avatar:Cheat('Dropdown', 'Boy Avatar', function(p136)
+    if p136 == 'Prisoner' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/prisoner.txt'))()
+    elseif p136 == 'Santa' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/santa.txt'))()
+    elseif p136 == 'Doge Swat' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/Doge%20Swat.txt'))()
+    elseif p136 == 'Red Outfit' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Avatar/Red.txt'))()
+    else
+        local _ = not (p136 == '')
+    end
+end, {
+    options = {
+        'Prisoner',
+        'Santa',
+        'Doge Swat',
+        'Red Outfit',
+    },
+})
+_Second:Cheat('Dropdown', 'Bundle', function(p137)
+    if p137 == 'Korblox Mage' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Korblox Mage', 'R6')
+    elseif p137 == 'Supreme Claus' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Supreme Claus', 'R6')
+    elseif p137 == 'Officer Blox' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Officer Blox', 'R6')
+    elseif p137 == 'Blocky Mech' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Blocky Mech', 'R6')
+    elseif p137 == 'Mr. Robot' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Mr. Robot', 'R6')
+    elseif p137 == 'Police Officer Nash' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Police Officer Nash', 'R6')
+    elseif p137 == 'Skelly' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Skelly', 'R6')
+    elseif p137 == 'Noob Attack' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Noob Attack', 'R6')
+    elseif p137 == 'Snow Gentleman' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Snow Gentleman', 'R6')
+    elseif p137 == 'White Collar Dog' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'White Collar Dog', 'R6')
+    elseif p137 == 'Superhero' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Superhero', 'R6')
+    elseif p137 == 'Mr. Toilet' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Mr. Toilet', 'R6')
+    elseif p137 == 'Firefighter' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Firefighter', 'R6')
+    elseif p137 == 'Magma Fiend' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Magma Fiend', 'R6')
+    elseif p137 == 'Werner Weenie' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Werner Weenie', 'R6')
+    elseif p137 == 'Penguin' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Penguin', 'R6')
+    elseif p137 == 'Borock the Conqueror' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Borock the Conqueror', 'R6')
+    elseif p137 == 'Skeleton' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Skeleton', 'R6')
+    elseif p137 == 'Gang O Fries' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', "Gang O' Fries", 'R6')
+    elseif p137 == 'Gingerbread Man' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Gingerbread Man', 'R6')
+    elseif p137 == 'Robber' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Bundle', 'Robber', 'R6')
+    elseif p137 == 'Kid R6' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Kid', 'R6')
+    elseif p137 == 'Kid R15' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('Kid', 'R15')
+    elseif p137 == 'Infant' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Infant')
+    elseif p137 == 'Crawler' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Crawler')
+    else
+        local _ = not (p137 == '')
+    end
+end, {
+    options = {
+        'Korblox Mage',
+        'Supreme Claus',
+        'Officer Blox',
+        'Blocky Mech',
+        'Mr. Robot',
+        'Police Officer Nash',
+        'Skelly',
+        'Noob Attack',
+        'Snow Gentleman',
+        'White Collar Dog',
+        'Superhero',
+        'Mr. Toilet',
+        'Firefighter',
+        'Magma Fiend',
+        'Werner Weenie',
+        'Penguin',
+        'Borock the Conqueror',
+        'Skeleton',
+        'Gang O Fries',
+        'ingerbread Man',
+        'Robber',
+        'Kid R6',
+        'Kid R15',
+        'Infant',
+        'Crawler',
+    },
+})
+_Second:Cheat('Dropdown', 'Pet', function(p138)
+    if p138 == 'Cat FREE' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Cat')
+    elseif p138 == 'Kitty FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Kitty')
+    elseif p138 == 'Dog FREE' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Dog')
+    elseif p138 == 'Dog 2 FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Dog')
+    elseif p138 == 'Puppy FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Puppy')
+    elseif p138 == 'Sheep FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Sheep')
+    elseif p138 == 'Turkey FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Turkey')
+    elseif p138 == 'Mouse FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Mouse')
+    elseif p138 == 'Turtle FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Turtle')
+    elseif p138 == 'Duck FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Duck')
+    elseif p138 == 'Bunny FREE' then
+        game:GetService('ReplicatedStorage').MainEvent:FireServer('Morph', 'Bunny')
+    elseif p138 == 'Dragon' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Dragon')
+    elseif p138 == 'Griffin' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Griffin')
+    elseif p138 == 'Wolf' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Wolf')
+    elseif p138 == 'Unicorn' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Unicorn')
+    elseif p138 == 'Flamingo' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Flamingo')
+    elseif p138 == 'Duck' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Duck')
+    elseif p138 == 'Bunny' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Bunny')
+    elseif p138 == 'Pig' then
+        game:GetService('ReplicatedStorage').Remotes.MorphEvent:FireServer('PetMorph', 'Pig')
+    else
+        local _ = not (p138 == '')
+    end
+end, {
+    options = {
+        'Cat FREE',
+        'Kitty FREE',
+        'Dog FREE',
+        'Dog 2 FREE',
+        'Puppy FREE',
+        'Sheep FREE',
+        'Turkey FREE',
+        'Mouse FREE',
+        'Turtle FREE',
+        'Duck FREE',
+        'Bunny FREE',
+        'Dragon',
+        'Griffin',
+        'Wolf',
+        'Unicorn',
+        'Flamingo',
+        'Duck',
+        'Bunny',
+        'Pig',
+    },
+})
+_Second:Cheat('Dropdown', 'Custom Avatar', function(p139)
+    if p139 == 'Multiple Wings' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/10-Wings%2BScript.txt'))()
+    elseif p139 == 'Multiple Wings V2' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/Multiple%20wings%20V2'))()
+    elseif p139 == 'Multiple Swords' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/10-Swords%2BScript.txt'))()
+    elseif p139 == 'R15 (Vip Required)' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/R15%20(Vip%20Required).txt'))()
+    elseif p139 == 'R6 (Vip Required)' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/R6%20(Vip%20Required).txt'))()
+    elseif p139 == 'Headless (Vip Required)' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/Headless%20(Vip%20Required).txt'))()
+    elseif p139 == 'FE invisible' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/FE%20invisible.txt'))()
+    elseif p139 == 'No Limbs' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Tazie22/Features/main/Family%20Paradise/Script/No%20Limbs.txt'))()
+    else
+        local _ = not (p139 == '')
+    end
+end, {
+    options = {
+        'Multiple Wings',
+        'Multiple Wings V2',
+        'Multiple Swords',
+        'R15 (Vip Required)',
+        'R6 (Vip Required)',
+        'Headless (Vip Required)',
+        'FE invisible',
+        'No Limbs',
+    },
+})
+_LocalPlayer5:Cheat('Checkbox', 'Auto Death Location', function(p140)
+    getgenv().RespawnOndeathlocation = p140
+
+    RespawnOndeathlocation()
+end)
+_LocalPlayer5:Cheat('Checkbox', 'Anti Stroller', function(p141)
+    getgenv().antisit = p141
+
+    antisit()
+end)
+_LocalPlayer5:Cheat('Checkbox', 'Reset', function(p142)
+    if p142 == true then
+        Reset()
+    end
+end)
+_LocalPlayer5:Cheat('Slider', 'WalkSpeed', function(p143)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = p143
+end, {
+    min = 16,
+    max = 500,
+    suffix = 'WalkSpeed',
+})
+_LocalPlayer5:Cheat('Slider', 'JumpPower', function(p144)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = p144
+end, {
+    min = 50,
+    max = 500,
+    suffix = 'JumpPower',
+})
+_LocalPlayer5:Cheat('Slider', 'Gravity', function(p145)
+    game.Workspace.Gravity = p145
+end, {
+    min = 0,
+    max = 200,
+    suffix = 'Gravity',
+})
+_LocalPlayer5:Cheat('Slider', 'FOV', function(p146)
+    game.Workspace.CurrentCamera.FieldOfView = p146
+end, {
+    min = 10,
+    max = 120,
+    suffix = 'FOV',
+})
+_LocalPlayer5:Cheat('Checkbox', 'Infinite Jump', function(p147)
+    getgenv().infjump1 = p147
+
+    infjump1()
+end)
+_LocalPlayer5:Cheat('Checkbox', 'Fly', function(p148)
+    if p148 == true then
+        Fly()
+    end
+end)
+
+local u149 = {}
+
+function updatePlayers()
+    u149 = {}
+
+    local v150 = next
+    local v151, v152 = game.Players:GetPlayers()
+
+    while true do
+        local v153
+
+        v152, v153 = v150(v151, v152)
+
+        if v152 == nil then
+            break
+        end
+
+        u149[v152] = v153.Name
+    end
+end
+
+updatePlayers()
+
+local _Dropdown = _Misc:Cheat('Dropdown', 'Select A Players', function(p154)
+    game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService('Workspace')[p154].HumanoidRootPart.CFrame
+end, {
+    options = u149,
+    default = 'Players',
+})
+
+game.Players.PlayerAdded:Connect(function(p156)
+    updatePlayers()
+    _Dropdown:AddOption(p156.Name)
+end)
+game.Players.PlayerRemoving:Connect(function(p157)
+    updatePlayers()
+    _Dropdown:RemoveOption(p157.Name)
+end)
+_Misc:Cheat('Textbox', 'Bring Player FE', function(p158)
+    Username = p158
+
+    local _Name4 = game:GetService('Players').LocalPlayer.Name
+
+    game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players[_Name4].Backpack.Stroller)
+
+    local _LocalPlayer6 = game:GetService('Players').LocalPlayer
+
+    game:GetService('Workspace')[Username].HumanoidRootPart.CFrame = _LocalPlayer6.Character.HumanoidRootPart.CFrame * CFrame.new(1, 0, -3.9)
+
+    wait(0.4)
+    game:GetService('Players').LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):UnequipTools()
+end, {
+    placeholder = 'Username',
+})
+_Misc:Cheat('Dropdown', 'Teleport To place', function(p161)
+    if p161 == 'Spawn' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(57, 19, 1471)
+    elseif p161 == 'Adoption Center' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(57, 12, 1286)
+    elseif p161 == 'Gear Shop' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(260, 12, 1518)
+    elseif p161 == 'Paradise Club' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-140, 12, 1517)
+    elseif p161 == 'Kids Park' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-113, 12, 1697)
+    elseif p161 == 'Prison' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-238, 27, 1779)
+    elseif p161 == 'Cinema' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-285, 27, 1632)
+    elseif p161 == 'Car Dealership' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-335, 27, 1422)
+    elseif p161 == 'Restaurant' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-225, 27, 1241)
+    elseif p161 == 'Cave' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(447, -10, 1518)
+    elseif p161 == 'Tree House' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135, 40, 1592)
+    elseif p161 == 'Water Park' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(407, 29, 1518)
+    elseif p161 == 'Camp Site' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(58, 12, 1133)
+    end
+end, {
+    options = {
+        'Spawn',
+        'Adoption Center',
+        'Gear Shop',
+        'Paradise Club',
+        'Kids Park',
+        'Prison',
+        'Cinema',
+        'Car Dealership',
+        'Restaurant',
+        'Cave',
+        'Tree House',
+        'Camp Site',
+        'Water Park',
+    },
+})
+_Misc:Cheat('Checkbox', 'Infinite Zoom', function(p162)
+    if p162 == true then
+        Zoom()
+    end
+end)
+_Settings2:Cheat('Checkbox', 'Rejoin', function(p163)
+    if p163 == true then
+        Rejoin()
+    end
+end)
+_Settings2:Cheat('Checkbox', 'ServerHop', function(p164)
+    if p164 == true then
+        ServerHop()
+    end
+end)
+_Settings2:Cheat('Checkbox', 'Destroy UI', function(p165)
+    if p165 == true then
+        RemoveUi()
+    end
+end)
